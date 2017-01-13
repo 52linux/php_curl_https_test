@@ -11,11 +11,11 @@ function niuc_curl($url){
         return $result;
 }
 
-        $url = 'https://www.baidu.com';
-        if(function_exists('curl_init')) {
-                $result = niuc_curl($url);
-                var_dump(strlen($result));
-                echo 'curl https ok ...';
-        } else {
-                echo 'please install php curl extension ...';
-        }
+$url = 'https://www.baidu.com';
+if(function_exists('curl_init')) {
+        $result = niuc_curl($url);
+        var_dump(strlen($result));
+        echo 'curl https ok ...';
+} else {
+        echo 'please install php curl extension ...';
+}
