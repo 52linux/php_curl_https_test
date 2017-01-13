@@ -10,7 +10,7 @@ function niuc_curl($url){
         curl_close($ch);
         return $result;
 }
-
+echo "PHP VERSION " . PHP_VERSION ;
 $url = 'https://www.baidu.com';
 if(function_exists('curl_init')) {
         $result = niuc_curl($url);
