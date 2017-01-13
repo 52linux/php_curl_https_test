@@ -17,10 +17,10 @@ $url = 'https://www.baidu.com';
                 if(function_exists('curl_init')) {
                         $result = niuc_curl($url);
                         var_dump(strlen($result));
-                        echo 'niuc_curl ok...';
+                        echo 'curl https ok ...';
                 } else {
-                        $result = file_get_contents($url);
-                        echo 'file_get_contents ok...';
+                        
+                        echo 'please install php curl extension ...';
                 }
 
 
