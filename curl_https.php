@@ -1,6 +1,4 @@
 <?php
-
-
 function niuc_curl($url){
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
@@ -12,16 +10,12 @@ function niuc_curl($url){
         curl_close($ch);
         return $result;
 }
-//phpinfo();die();
-$url = 'https://www.baidu.com';
-                if(function_exists('curl_init')) {
-                        $result = niuc_curl($url);
-                        var_dump(strlen($result));
-                        echo 'curl https ok ...';
-                } else {
-                        
-                        echo 'please install php curl extension ...';
-                }
 
-
-?>
+        $url = 'https://www.baidu.com';
+        if(function_exists('curl_init')) {
+                $result = niuc_curl($url);
+                var_dump(strlen($result));
+                echo 'curl https ok ...';
+        } else {
+                echo 'please install php curl extension ...';
+        }
